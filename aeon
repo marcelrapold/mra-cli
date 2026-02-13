@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# ═══════════════════════════════════════════════════════════════════════════════
+# ÆON — Agent entrypoint for rapoldio CLI
+# ═══════════════════════════════════════════════════════════════════════════════
+set -euo pipefail
+export AGENT_ID="aeon"
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lib/main.sh"
+rcli_main "$@"

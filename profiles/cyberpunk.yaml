@@ -1,0 +1,36 @@
+# ÆON CLI — Cyberpunk Theme
+name: cyberpunk
+description: Neon-soaked terminal aesthetics
+
+colors:
+  primary: "\e[36m"     # Cyan
+  secondary: "\e[97m"   # Bright white
+  accent: "\e[35m"      # Magenta
+  highlight: "\e[33m"   # Yellow
+  success: "\e[32m"     # Green
+  error: "\e[31m"       # Red
+  dim: "\e[2m"          # Dim
+  matrix: "\e[38;5;28m" # Dark green (matrix rain)
+
+dashboard:
+  refresh: 5
+  top_bar_font: block   # figlet font
+  matrix_rain: true
+  scanner_line: true
+  startup_sound: true
+  show_markets: true
+  show_news: true
+  show_weather: true
+  show_clock: true
+  show_github: true
+  show_agents: true
+  show_decisions: true
+  show_chronicle: true
+  market_cycle_seconds: 20
+  news_sources:
+    - watcher.guru
+    - 20min.ch
+
+border:
+  style: unicode        # unicode | ascii | double
+  color: cyan

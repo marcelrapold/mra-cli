@@ -1,0 +1,17 @@
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# macOS files
+.DS_Store

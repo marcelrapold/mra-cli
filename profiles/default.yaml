@@ -1,0 +1,22 @@
+# ÆON CLI — Default Profile
+name: default
+description: Clean default theme
+
+colors:
+  primary: cyan
+  secondary: white
+  accent: green
+  warning: yellow
+  error: red
+  dim: grey
+
+dashboard:
+  refresh: 5
+  show_markets: true
+  show_news: true
+  show_weather: true
+  show_clock: true
+  market_cycle_seconds: 20
+  news_sources:
+    - watcher.guru
+    - 20min.ch
