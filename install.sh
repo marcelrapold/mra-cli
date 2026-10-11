@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # ═══════════════════════════════════════════════════════════════════════════════
 # rapoldio CLI — Multi-Agent Installer
-# curl -fsSL cli.rapold.io | bash
+# curl -fsSL https://raw.githubusercontent.com/marcelrapold/mra-cli/main/install.sh | bash
 # ═══════════════════════════════════════════════════════════════════════════════
 set -euo pipefail
 
 C="\e[36m"; W="\e[97m"; G="\e[32m"; R="\e[31m"; Y="\e[33m"; M="\e[35m"
 B="\e[1m"; D="\e[2m"; N="\e[0m"
 
-REPO="https://github.com/rapoldio/cli.git"
+REPO="https://github.com/marcelrapold/mra-cli.git"
 INSTALL_DIR="$HOME/rapoldio-cli"
 BIN_DIR="$HOME/bin"
 CONFIG_DIR="$HOME/.rapoldio"

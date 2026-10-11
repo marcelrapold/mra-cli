@@ -22,9 +22,10 @@ jobs:
             shellcheck -x -S warning "$f" || true
           done
 
-      - name: Check main entry point
-        run: shellcheck -x -S warning ./aeon
-        shellcheck -x -S warning ./aethra || true || true
+      - name: Check entry points
+        run: |
+          shellcheck -x -S warning ./aeon
+          shellcheck -x -S warning ./aethra
 
   syntax:
     runs-on: ubuntu-latest

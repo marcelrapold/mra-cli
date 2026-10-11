@@ -18,7 +18,7 @@ git push origin feature/YourFeatureName
 
 ## Reporting Issues
 
-If you encounter bugs or have feature requests, please open an issue at https://github.com/rapoldio/cli/issues. Provide as much detail as possible to help us address the issue.
+If you encounter bugs or have feature requests, please open an issue at https://github.com/marcelrapold/mra-cli/issues. Provide as much detail as possible to help us address the issue.
 
 ## Development Workflow
 

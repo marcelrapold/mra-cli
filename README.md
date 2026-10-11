@@ -12,9 +12,9 @@
 <h3>rapoldio CLI</h3>
 <p><em>Multi-agent CLI for ÆON & ÆTHRA — Cyberpunk dashboards, fleet management, Pi deployment</em></p>
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)]()
-[![License](https://img.shields.io/github/license/rapoldio/cli)](LICENSE)
+[![CI](https://github.com/marcelrapold/mra-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/marcelrapold/mra-cli/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
+[![License](https://img.shields.io/github/license/marcelrapold/mra-cli)](LICENSE)
 [![Shell](https://img.shields.io/badge/Shell-Bash_5.x-4EAA25?logo=gnubash)](https://www.gnu.org/software/bash/)
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Raspberry_Pi-C51A4A?logo=raspberrypi)](https://www.raspberrypi.com/)
@@ -24,6 +24,10 @@
 ---
 
 ## Overview
+
+> **TL;DR** — Bash/tmux toolkit to run ÆON/ÆTHRA dashboards on Raspberry Pis and push
+> updates to the whole fleet over SSH. Repository: [`marcelrapold/mra-cli`](https://github.com/marcelrapold/mra-cli)
+> (renamed from `marcelrapold/cli` on 2026-10-12; old URLs redirect).
 
 **rapoldio CLI** is a multi-agent, modular command-line framework for managing a fleet of Raspberry Pis. It powers cyberpunk-styled tmux dashboards featuring matrix rain animations, live cryptocurrency charts, world clocks, weather feeds, news tickers, and system monitoring.
 
@@ -52,15 +56,18 @@ Each agent gets its own entrypoint (`aeon` / `aethra`), dashboard branding, task
 ## Quick Install
 
 ```bash
-curl -fsSL cli.rapold.io | bash
+curl -fsSL https://raw.githubusercontent.com/marcelrapold/mra-cli/main/install.sh | bash
 ```
+
+> The short alias `cli.rapold.io` is currently not served (TLS handshake fails), so use the
+> raw GitHub URL above.
 
 The installer will ask you to choose your agent (ÆON or ÆTHRA) and set everything up.
 
 ### Manual Install
 
 ```bash
-git clone https://github.com/rapoldio/cli.git ~/rapoldio-cli
+git clone https://github.com/marcelrapold/mra-cli.git ~/rapoldio-cli
 cd ~/rapoldio-cli
 chmod +x aeon aethra
 ./install.sh

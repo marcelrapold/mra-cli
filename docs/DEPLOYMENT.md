@@ -45,7 +45,7 @@ Add to each Pi's crontab or systemd:
 @reboot sleep 10 && /home/aeon/cli/aeon dashboard start
 ```
 
-Or create a systemd service — see the [wiki](https://github.com/rapoldio/cli/wiki) for a template.
+Or create a systemd service — see the [wiki](https://github.com/marcelrapold/mra-cli/wiki) for a template.
 
 ## Update Cycle
 
